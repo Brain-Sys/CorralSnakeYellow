@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Aula5.CorralSnakeYellow.DomainModel
 {
-    public class Movimento
+    public class Movimento : OggettoDominio
     {
         public DateTime Data { get; set; }
         public double Importo { get; set; }

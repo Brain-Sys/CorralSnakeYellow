@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5.CorralSnakeYellow.Win
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5.CorralSnakeYellow.ScheduledTask", "Aula5.CorralSnakeYellow.ScheduledTask\Aula5.CorralSnakeYellow.ScheduledTask.csproj", "{AAA0325A-778D-4A44-A910-3F58558A1AE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5.CorralSnakeYellow.Interfaces", "Aula5.CorralSnakeYellow.Interfaces\Aula5.CorralSnakeYellow.Interfaces.csproj", "{AC40D999-D77C-40E0-8817-BFFE94E825FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{AAA0325A-778D-4A44-A910-3F58558A1AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAA0325A-778D-4A44-A910-3F58558A1AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAA0325A-778D-4A44-A910-3F58558A1AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC40D999-D77C-40E0-8817-BFFE94E825FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC40D999-D77C-40E0-8817-BFFE94E825FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC40D999-D77C-40E0-8817-BFFE94E825FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC40D999-D77C-40E0-8817-BFFE94E825FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Aula5.CorralSnakeYellow.DomainModel
 {
-    public class ContoCorrente
+    public class ContoCorrente : OggettoDominio
     {
         public DateTime DataApertura { get; set; }
         public string Valuta { get; set; }

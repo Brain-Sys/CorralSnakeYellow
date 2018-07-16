@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Aula5.CorralSnakeYellow.Interfaces\Aula5.CorralSnakeYellow.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>
