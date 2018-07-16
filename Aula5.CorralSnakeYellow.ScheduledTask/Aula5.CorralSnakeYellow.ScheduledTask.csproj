@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Aula5.CorralSnakeYellow.ScheduledTask</RootNamespace>
     <AssemblyName>Aula5.CorralSnakeYellow.ScheduledTask</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aula5.CorralSnakeYellow.DomainModel\Aula5.CorralSnakeYellow.DomainModel.csproj">
+      <Project>{3fd61900-3c48-4f72-a977-b553c618f2c3}</Project>
+      <Name>Aula5.CorralSnakeYellow.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
