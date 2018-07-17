@@ -29,11 +29,13 @@ namespace Aula5.CorralSnakeYellow.DomainModel
             this.Nome = nome;
         }
 
-        public void Stampa()
+        public string Stampa()
         {
             int pagine = calcolaPagine();
             preparaTestata();
             preparaPièDiPagina();
+
+            return "1/" + pagine;
         }
 
         private byte[] preparaTestata()

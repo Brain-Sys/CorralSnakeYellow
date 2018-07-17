@@ -58,6 +58,14 @@
       <Project>{3fd61900-3c48-4f72-a977-b553c618f2c3}</Project>
       <Name>Aula5.CorralSnakeYellow.DomainModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Aula5.CorralSnakeYellow.Repository.Interfaces\Aula5.CorralSnakeYellow.Repository.Interfaces.csproj">
+      <Project>{bb174ea3-74aa-4457-8ad8-0e62f3b98960}</Project>
+      <Name>Aula5.CorralSnakeYellow.Repository.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Aula5.CorralSnakeYellow.Repository\Aula5.CorralSnakeYellow.Repository.csproj">
+      <Project>{19b7c351-4029-4a1b-96f6-e70600a123ab}</Project>
+      <Name>Aula5.CorralSnakeYellow.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

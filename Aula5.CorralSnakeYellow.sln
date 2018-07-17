@@ -17,6 +17,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula5.CorralSnakeYellow.Int
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5.CorralSnakeYellow.BusinessLayer", "Aula5.CorralSnakeYellow.BusinessLayer\Aula5.CorralSnakeYellow.BusinessLayer.csproj", "{E3EB4C09-7AA2-464B-8D48-2A465A33BA69}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{DB9C8137-87FF-4495-91FB-885FA7B4BF0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5.CorralSnakeYellow.Anagrafiche", "Aula5.CorralSnakeYellow.Anagrafiche\Aula5.CorralSnakeYellow.Anagrafiche.csproj", "{6A6C0CFE-6E05-4EC0-A64C-E19464B09A8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5.CorralSnakeYellow.Contabilità", "Aula5.CorralSnakeYellow.Contabilità\Aula5.CorralSnakeYellow.Contabilità.csproj", "{05EB250F-A9BB-45FF-9CB3-F0A899087724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5.CorralSnakeYellow.Repository.Interfaces", "Aula5.CorralSnakeYellow.Repository.Interfaces\Aula5.CorralSnakeYellow.Repository.Interfaces.csproj", "{BB174EA3-74AA-4457-8AD8-0E62F3B98960}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula5.CorralSnakeYellow.Repository", "Aula5.CorralSnakeYellow.Repository\Aula5.CorralSnakeYellow.Repository.csproj", "{19B7C351-4029-4A1B-96F6-E70600A123AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +57,22 @@ Global
 		{E3EB4C09-7AA2-464B-8D48-2A465A33BA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3EB4C09-7AA2-464B-8D48-2A465A33BA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3EB4C09-7AA2-464B-8D48-2A465A33BA69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6C0CFE-6E05-4EC0-A64C-E19464B09A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6C0CFE-6E05-4EC0-A64C-E19464B09A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6C0CFE-6E05-4EC0-A64C-E19464B09A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6C0CFE-6E05-4EC0-A64C-E19464B09A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EB250F-A9BB-45FF-9CB3-F0A899087724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EB250F-A9BB-45FF-9CB3-F0A899087724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EB250F-A9BB-45FF-9CB3-F0A899087724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EB250F-A9BB-45FF-9CB3-F0A899087724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB174EA3-74AA-4457-8AD8-0E62F3B98960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB174EA3-74AA-4457-8AD8-0E62F3B98960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB174EA3-74AA-4457-8AD8-0E62F3B98960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB174EA3-74AA-4457-8AD8-0E62F3B98960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B7C351-4029-4A1B-96F6-E70600A123AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B7C351-4029-4A1B-96F6-E70600A123AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B7C351-4029-4A1B-96F6-E70600A123AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B7C351-4029-4A1B-96F6-E70600A123AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +81,8 @@ Global
 		{2F5DF47E-55DD-4E48-B6E2-FBFD85C49B95} = {7070A83D-A038-40B4-BA7D-012A3664CA0C}
 		{EF4756A8-DAB5-494C-94D9-8137FDACF1E7} = {7070A83D-A038-40B4-BA7D-012A3664CA0C}
 		{AAA0325A-778D-4A44-A910-3F58558A1AE3} = {7070A83D-A038-40B4-BA7D-012A3664CA0C}
+		{6A6C0CFE-6E05-4EC0-A64C-E19464B09A8A} = {DB9C8137-87FF-4495-91FB-885FA7B4BF0D}
+		{05EB250F-A9BB-45FF-9CB3-F0A899087724} = {DB9C8137-87FF-4495-91FB-885FA7B4BF0D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB69E12C-2587-4906-90CA-A3AE95F14020}

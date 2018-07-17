@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aula5.CorralSnakeYellow.DomainModel\Aula5.CorralSnakeYellow.DomainModel.csproj" />
+  </ItemGroup>
+
+</Project>

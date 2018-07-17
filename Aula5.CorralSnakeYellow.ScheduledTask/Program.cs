@@ -1,6 +1,7 @@
 ﻿using Aula5.CorralSnakeYellow.DomainModel;
 using Aula5.CorralSnakeYellow.BusinessLayer;
 using System;
+using Aula5.CorralSnakeYellow.Repository.Interfaces;
 
 namespace Aula5.CorralSnakeYellow.ScheduledTask
 {
@@ -15,6 +16,9 @@ namespace Aula5.CorralSnakeYellow.ScheduledTask
 
         static void Main(string[] args)
         {
+            IRepo repo = new Aula5.CorralSnakeYellow.Repository.MySql.MySqlRepo();
+            var tabella = repo.Clienti;
+
             const int costante = 23;
             // int y = solaLettura * 2;
             // solaLettura = 90;
@@ -24,6 +28,7 @@ namespace Aula5.CorralSnakeYellow.ScheduledTask
             ImpostazioniUtente.Username = "igor.damiani";
 
             Cliente c1 = Cliente.Factory.Crea();
+            string numero = c1.Stampa();
 
             CartaCredito miaCarta1 = Carta.Factory.CreateInstance("C") as CartaCredito;
             miaCarta1.Annulla();
