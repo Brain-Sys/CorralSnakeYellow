@@ -8,6 +8,7 @@ namespace Aula5.CorralSnakeYellow.ScheduledTask
         static void Main(string[] args)
         {
             ContoCorrente conto = new ContoCorrente();
+            OggettoDominio od = conto;
 
             if (DateTime.Now.Day == 16)
             {
