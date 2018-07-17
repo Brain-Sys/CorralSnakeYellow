@@ -16,7 +16,10 @@ namespace Aula5.CorralSnakeYellow.ScheduledTask
 
         static void Main(string[] args)
         {
-            IRepo repo = new Aula5.CorralSnakeYellow.Repository.MySql.MySqlRepo();
+            IRepo repo = DependencyResolver.Get();
+            Console.WriteLine("Sto accedendo al database con:");
+            Console.WriteLine(repo.GetType().Name);
+
             var tabella = repo.Clienti;
 
             const int costante = 23;

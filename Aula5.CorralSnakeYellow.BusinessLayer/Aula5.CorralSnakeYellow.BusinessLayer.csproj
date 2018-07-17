@@ -4,4 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Aula5.CorralSnakeYellow.Repository.Interfaces\Aula5.CorralSnakeYellow.Repository.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Configuration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

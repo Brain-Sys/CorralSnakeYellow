@@ -11,5 +11,10 @@ namespace Aula5.CorralSnakeYellow.Repository.MySql
     {
         public IQueryable<Cliente> Clienti { get; set; }
         public IQueryable<ContoCorrente> ContiCorrente { get; set; }
+
+        public MySqlRepo()
+        {
+
+        }
     }
 }
