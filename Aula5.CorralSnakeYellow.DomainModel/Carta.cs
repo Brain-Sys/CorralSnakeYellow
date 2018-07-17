@@ -11,6 +11,23 @@ namespace Aula5.CorralSnakeYellow.DomainModel
         public Cliente Cliente { get; set; }
         public ContoCorrente Conto { get; set; }
 
+        // camelCase    (privato)
+        // PascalCase   (pubblico)
+        public virtual void Annulla()
+        {
+            // Qui faccio tutto ciò che è in comune...
+            // Log
+            // Mail, telefonata
+        }
+
+        // Privato esternamente alla classe
+        // Pubblico per carta e per le sue derivate
+        // camelCase
+        protected virtual void acquista()
+        {
+
+        }
+
         // Classe factory
         public static class Factory
         {

@@ -10,5 +10,15 @@ namespace Aula5.CorralSnakeYellow.DomainModel
         public Cliente Cliente { get; set; }
         public double SaldoDisponibile { get; set; }
         public List<Movimento> Movimenti { get; set; }
+
+        // Proprietà readonly
+        public bool CiSonoMovimenti
+        {
+            get
+            {
+                return Movimenti != null &&
+                    Movimenti.Count > 0;
+            }
+        }
     }
 }

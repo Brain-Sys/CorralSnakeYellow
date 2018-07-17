@@ -1,15 +1,35 @@
 ﻿using Aula5.CorralSnakeYellow.DomainModel;
+using Aula5.CorralSnakeYellow.BusinessLayer;
 using System;
 
 namespace Aula5.CorralSnakeYellow.ScheduledTask
 {
     class Program
     {
+        private static readonly bool solaLettura;
+
+        static Program()
+        {
+            solaLettura = DateTime.Now.Second % 2 == 0;
+        }
+
         static void Main(string[] args)
         {
+            const int costante = 23;
+            // int y = solaLettura * 2;
+            // solaLettura = 90;
+
+            ImpostazioniUtente.FavoriteColor = "Green";
+            ImpostazioniUtente.ItemsNumber = 20;
+            ImpostazioniUtente.Username = "igor.damiani";
+
             Cliente c1 = Cliente.Factory.Crea();
 
             CartaCredito miaCarta1 = Carta.Factory.CreateInstance("C") as CartaCredito;
+            miaCarta1.Annulla();
+
+            CartaDebito debito = new CartaDebito();
+            debito.Annulla();
             //System.Threading.ThreadPool.QueueUserWorkItem();
 
             Carta miaCarta2 = Carta.Factory.CreateInstance("D");
@@ -50,6 +70,8 @@ namespace Aula5.CorralSnakeYellow.ScheduledTask
 
             var cc = new CartaCredito();
             var cd = new CartaDebito().DataAttivazione.Month == 2;
+
+            Console.ReadLine();
         }
     }
 }

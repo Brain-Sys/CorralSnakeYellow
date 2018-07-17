@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Aula5.CorralSnakeYellow.BusinessLayer\Aula5.CorralSnakeYellow.BusinessLayer.csproj">
+      <Project>{e3eb4c09-7aa2-464b-8d48-2a465a33ba69}</Project>
+      <Name>Aula5.CorralSnakeYellow.BusinessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Aula5.CorralSnakeYellow.DomainModel\Aula5.CorralSnakeYellow.DomainModel.csproj">
       <Project>{3fd61900-3c48-4f72-a977-b553c618f2c3}</Project>
       <Name>Aula5.CorralSnakeYellow.DomainModel</Name>
