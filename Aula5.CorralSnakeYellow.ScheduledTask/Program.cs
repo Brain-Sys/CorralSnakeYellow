@@ -7,7 +7,27 @@ namespace Aula5.CorralSnakeYellow.ScheduledTask
     {
         static void Main(string[] args)
         {
+            Cliente c1 = Cliente.Factory.Crea();
+
+            CartaCredito miaCarta1 = Carta.Factory.CreateInstance("C") as CartaCredito;
+            //System.Threading.ThreadPool.QueueUserWorkItem();
+
+            Carta miaCarta2 = Carta.Factory.CreateInstance("D");
+
             ContoCorrente conto = new ContoCorrente();
+            Movimento mov = Movimento.Factory.Crea();
+            mov.Data = DateTime.Now;
+            mov.Importo = 170.23;
+
+            //conto.CreaMovimento()
+
+
+
+
+
+
+
+            
             OggettoDominio od = conto;
 
             if (DateTime.Now.Day == 16)
@@ -26,13 +46,10 @@ namespace Aula5.CorralSnakeYellow.ScheduledTask
             io.Cognome = "Rossi";
             io.Nome = "Mario";
             io.DataNascita = new DateTime(1976, 2, 28);
+            io.Stampa();
 
             var cc = new CartaCredito();
             var cd = new CartaDebito().DataAttivazione.Month == 2;
-
-
-            cc = null;
-            cc.LimiteMensile = 560;
         }
     }
 }
