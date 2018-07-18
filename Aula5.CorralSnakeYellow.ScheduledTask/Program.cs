@@ -16,7 +16,14 @@ namespace Aula5.CorralSnakeYellow.ScheduledTask
 
         static void Main(string[] args)
         {
+            // Database
+            // Autenticazione
+            // Protocolli di rete
+            // Logging
+            
+            // Unity
             IRepo repo = DependencyResolver.Get();
+
             Console.WriteLine("Sto accedendo al database con:");
             Console.WriteLine(repo.GetType().Name);
 

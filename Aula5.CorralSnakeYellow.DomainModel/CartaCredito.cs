@@ -8,5 +8,10 @@ namespace Aula5.CorralSnakeYellow.DomainModel
     public class CartaCredito : Carta, IAggregateRoot
     {
         public double LimiteMensile { get; set; }
+
+        public override void Annulla()
+        {
+            // throw new InvalidOperationException();
+        }
     }
 }
