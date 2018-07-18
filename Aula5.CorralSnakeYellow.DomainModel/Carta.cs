@@ -5,11 +5,12 @@ using System.Text;
 
 namespace Aula5.CorralSnakeYellow.DomainModel
 {
-    public class Carta : OggettoDominio, IAggregateRoot
+    public class Carta : OggettoDominio, IAggregateRoot, IDisposable, IEquatable<Carta>
     {
         public DateTime DataAttivazione { get; set; }
         public Cliente Cliente { get; set; }
         public ContoCorrente Conto { get; set; }
+        public byte[] Foto { get; set; }
 
         // camelCase    (privato)
         // PascalCase   (pubblico)
@@ -18,6 +19,22 @@ namespace Aula5.CorralSnakeYellow.DomainModel
             // Qui faccio tutto ciò che è in comune...
             // Log
             // Mail, telefonata
+        }
+
+        public void Dispose()
+        {
+            // Ripulite a mano la memoria
+            this.Foto = null;
+        }
+
+        public bool Equals(Carta other)
+        {
+            return this.ID == other.ID;
+
+            if (this.ID == other.ID)
+                return true;
+            else
+                return false;
         }
 
         // Privato esternamente alla classe
@@ -34,6 +51,11 @@ namespace Aula5.CorralSnakeYellow.DomainModel
             public static Carta CreateInstance(string tipoCarta)
             {
                 Carta c;
+
+                #region Programmazione difensiva
+                // Difensiva
+                // if
+                #endregion
 
                 if (tipoCarta.ToUpper() == "D")
                 {
